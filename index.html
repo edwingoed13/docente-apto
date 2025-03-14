@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Estado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo_cepre.png" alt="Descripción del logo" class="logo">
+        <h1>Consulta tu estado</h1>
+        <input type="text" id="dni" placeholder="Ingresa tu DNI" required>
+        <div id="captcha">
+            <p>Por favor, introduce el código de verificación:</p>
+            <p id="captchaText"></p>
+            <input type="text" id="captchaInput" placeholder="Introduce el código">
+        </div>
+        <button onclick="consultarEstado()">Consultar</button>
+        <div id="resultado" class="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
